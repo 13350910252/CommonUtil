@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Library</string>
+    <item name="right_key" type="id"/>
+    <item name="left_key" type="id"/>
 </resources>

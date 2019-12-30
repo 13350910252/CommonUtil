@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CommonUtil</string>
+    <!--    json-->
+    <string name="quchu_json">String转换成json，去除\"</string>
 </resources>

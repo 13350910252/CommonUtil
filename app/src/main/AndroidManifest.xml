@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".base.AppBaseActivity" />
+        <activity android:name=".test.TestLiveDataActivity" />
+        <activity android:name=".module.json.activity.TestJsonOneActivity" />
+        <activity android:name=".module.json.activity.TestJsonActivity" />
+        <activity android:name=".module.dialog_fragment.TestDialogFragmentActivity" />
     </application>
 
 </manifest>
