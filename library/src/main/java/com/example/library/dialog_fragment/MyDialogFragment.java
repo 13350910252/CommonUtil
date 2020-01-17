@@ -76,7 +76,6 @@ public class MyDialogFragment extends DialogFragment {
             }
         }
     }
-
     //如果需要全屏，则必须设置background
     public void setBackgroundID(int backgroundID) {
         this.backgroundID = backgroundID;

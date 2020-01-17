@@ -25,11 +25,14 @@ public class TestLiveDataActivity extends AppCompatActivity {
         myViewModel = ViewModelProviders.of(TestLiveDataActivity.this).get(MyViewModel.class);
         final MutableLiveData<String> mutableLiveData = myViewModel.<String>get();
         final MutableLiveData<Integer> mutableLiveData1 = myViewModel.<Integer>get();
+        Log.d("abcd", "onCreate: "+mutableLiveData.hashCode());
+        Log.d("abcd", "onCreate: "+mutableLiveData1.hashCode());
+//        final MutableLiveData<Integer> mutableLiveData1 = myViewModel.<Integer>get();
         findViewById(R.id.btn_live_data_one).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mutableLiveData.setValue("fdfdf");
-                mutableLiveData1.setValue(222);
+//                mutableLiveData1.setValue(222);
             }
         });
         Log.d("abcd", "onCreate: ");
@@ -39,11 +42,11 @@ public class TestLiveDataActivity extends AppCompatActivity {
                 Log.d("abcd", "onChanged: " + o);
             }
         });
-        mutableLiveData1.observe(this, new Observer<Integer>() {
-            @Override
-            public void onChanged(Integer o) {
-                Log.d("abcd", "onChanged: "+o);
-            }
-        });
+//        mutableLiveData1.observe(this, new Observer<Integer>() {
+//            @Override
+//            public void onChanged(Integer o) {
+//                Log.d("abcd", "onChanged: "+o);
+//            }
+//        });
     }
 }
