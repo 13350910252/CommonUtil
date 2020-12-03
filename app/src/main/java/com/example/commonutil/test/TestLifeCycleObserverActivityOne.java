@@ -20,7 +20,7 @@ public class TestLifeCycleObserverActivityOne extends Activity implements Lifecy
     @NonNull
     @Override
     public Lifecycle getLifecycle() {
-        //返回Lifecycle
+        //返回Lifecycles
         return mLifecycleRegistry;
     }
 
