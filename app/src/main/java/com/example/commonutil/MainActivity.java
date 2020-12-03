@@ -23,7 +23,7 @@ public class MainActivity extends AppBaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //
+        //s
         setContentView(R.layout.activity_main);
         initViews();
         bindData();
