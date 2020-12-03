@@ -5,9 +5,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.example.library.base.BaseActivity;
+import com.example.library.base.BaseFragmentActivity;
 
-public class AppBaseActivity extends BaseActivity implements View.OnClickListener {
+public class AppBaseFragmentActivity extends BaseFragmentActivity implements View.OnClickListener {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,10 +17,12 @@ public class AppBaseActivity extends BaseActivity implements View.OnClickListene
     public void onClick(View view) {
 
     }
-    public void initViews(){
+
+    public void initViews() {
 
     }
-    public void bindData(){
+
+    public void bindData() {
 
     }
 }

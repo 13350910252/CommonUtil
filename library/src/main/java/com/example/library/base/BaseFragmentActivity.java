@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
 
 import com.example.library.R;
 
-public class BaseActivity extends Activity {
+public class BaseFragmentActivity extends FragmentActivity {
     public Context mContext;
     public Activity mActivity;
 
